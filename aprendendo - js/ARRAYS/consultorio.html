@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="IMG/js.png">
+    <link rel="stylesheet" href="CSS/Estilos.css">
+    <title>Consultorio</title>
+</head>
+<body>
+    <img src="IMG/consultorio.jpg" alt="consultorio" class="alta">
+    <h1>Consultorio Odotológico</h1>
+
+    <form>
+        <p>Paciente:
+            <input type="text" id="inPaciente" required autofocus>
+            <input type="submit" value="Adicionar">
+            <input type="button" value="Urgencia" id="btUrgencia">
+            <input type="button" value="Atender" id="btAtender">
+        </p>
+    </form>
+
+    <h3>Em atendimento: 
+<!-- com span pode indenticar um local da pagina e alterar seu conteudo sem quebrar linha -->
+        <span class="fonteAzul"></span>
+    </h3>
+    <pre></pre>
+
+    <script src="JS/consultorio2.js"></script>
+</body>
+</html>

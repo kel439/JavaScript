@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxa de entrega</title>
+</head>
+<body>
+    <h1>Menu de Opções</h1>
+    <p>1 - Contas a pagar</p>
+    <p>2 - Contas a receber</p>
+    <p>3 - Controle de estoque</p>
+    <p>4 - Relatório</p>
+    <p>5 - Backup</p>
+      
+   
+
+    <form>
+        <p>Digite sua opção:
+            <input type="number" id="inOpcao" required>
+        </p>
+        <input type="button" value="Mostrar resposta" onclick="resposta()">
+    </form>
+    <h3></h3>
+    <script>
+
+        const frm = document.querySelector("form");
+        const resp = document.querySelector("h3");
+
+       
+
+        function resposta() {
+            let opcao = Number(frm.inOpcao.value);
+
+             switch (opcao) {
+            case 1 : 
+                resp.innerText = "Você escolheu o sistema Contas a pagar";
+                break;
+            case 2 : 
+                resp.innerText = "Você escolheu o sistema Contas a receber";
+                break;
+            case 3 : 
+                resp.innerText = "Você escolheu o sistema Controle de estoque";
+                break;
+            case 4 : 
+                resp.innerText = "Você escolheu o sistema Relatorio";
+                break;
+            case 5 : 
+                resp.innerText = "Você escolheu o sistema Backup";
+                break
+            default : 
+                resp.innerText = "Essa opção não existe";
+        }
+            
+        }
+
+    
+        //const bairro =  prompt("Bairro de entrega: ");
+
+        //let taxaEntrega;
+
+        //switch (bairro) {
+          //  case 'Centro' :
+            ///    taxaEntrega = 5.00;
+               // break;
+
+            //case 'Campos Elisios':
+            //case 'Jardim Paulista':
+             //   taxaEntrega = 7.00;
+               // break;
+
+            //case 'Sumarezinho' : 
+              //  taxaEntrega = 10.00;
+                //break
+            //default :
+              //  taxaEntrega = 15.00; 
+
+        //}
+
+        // alert("Taxa R$" + taxaEntrega.toFixed(2));
+
+    </script>
+    
+</body>
+</html>

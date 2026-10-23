@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia</title>
+</head>
+<body>
+    <form>
+    <!--O input com o nome text ele vai receber qualquer caracter so que os numeros não sao considerados como numeros-->
+    <p>Nome do Remedio:
+        <input type="text" id="inRemedio" required>
+    </p>
+    <!--O input com o nome "number" ele vai receber os numeros e vai exibir umas setas de para adicionar ou diminuir os numeros-->
+    <p>Valor do Remedio:
+        <input type="number" id="inPreco" min="0" step="0.01" required>
+    </p>
+    <p>
+        <!--O submit ele vai gerar um botao para enviar-->
+        <input type="submit" value="Mostrar Promoção">
+    </p>
+</form>
+    <h3></h3>
+    <h4></h4>
+    <!-- tambem pode ser assim mas mudando o (id="")
+     <h3 id="num1"></h3>
+     <h3 id="num2"></h3> -->
+    <script src="js/farmaciaJS.js"></script>
+</body>
+</html>

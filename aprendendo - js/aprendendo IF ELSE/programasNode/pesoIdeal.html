@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/js.png">
+    <title>Calculadora de Pesos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <img src="img/pesoideal.jpg" alt="palaça de pesos">
+    <h1>Programa Cálculo de Pesos Ideal</h1>
+    <form>
+        <p>Nome
+            <input type="text" id="inNome" required>
+        </p>
+        <p>Sexo
+            <input type="radio" name="sexo" id="inMasculino" required>Masculino
+            <input type="radio" name="sexo" id="inFeminino" required>Feminino
+        </p>
+        <p>Sua altura:
+            <input type="number" min="0" step="0.01" id="inAltura" required>
+        </p>
+        <p>
+            <input type="submit" value="calcular">
+            <input type="reset" value="limpar campos">
+        </p>
+    </form>
+    <h3></h3>
+<script src="js/pesoIdeal.js"></script>
+</body>
+</html>

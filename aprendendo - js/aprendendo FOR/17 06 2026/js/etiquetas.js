@@ -1,0 +1,10 @@
+const prompt = require('prompt-sync')();
+const produto = prompt("Produto: ");
+const num = Number(prompt("Nº de Etiquetas"));
+
+for (let i = 1; i <= num / 2; i++){
+    console.log(`${produto.padEnd(30)} ${produto.padEnd(30)}`); //padEnd() preenche com espaço
+}
+if (num % 2 == 1){ // se a quantidade solicitada for ímpar
+    console.log(produto);
+}

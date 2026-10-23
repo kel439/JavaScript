@@ -1,0 +1,12 @@
+<script>
+    const preco = Number (prompt("Valor do preço: "));
+    let vista;
+    let parcelado;
+    let total;
+
+    vista = preco * 10/100;
+    total = preco - vista
+    parcelado = preco / 3;
+
+    alert("O valor com desconto é: " + total + "\n O valor parcelado 3x: " + parcelado);
+</script>
